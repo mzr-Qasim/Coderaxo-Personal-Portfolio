@@ -1,10 +1,27 @@
 @media (max-width: 991px){
     .main-hero-left {
+
   figure {
-    aspect-ratio: 2/1.3;
-    img{
-      object-position: top;
+    aspect-ratio: 1/.7;
+}
+}
+
+.main-hero-right {
+  margin-top: 6rem;
+}
+}
+
+
+
+@media (max-width: 768px){
+section.resume-section{
+.resume-wrapper{
+  li{
+    display: block;
+    span{
+      display: block;
     }
+}
 }
 }
 }

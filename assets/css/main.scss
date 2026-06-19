@@ -11,10 +11,14 @@
     z-index: 100;
     background-color: $navbar-color;
 
+    img{
+    height: clamp(2rem, 5vw, 3rem);
+    }
+
     ul{
         li{
             &:not(:last-child){
-                margin-right: 3rem;
+                margin-right: 2.5rem;
             }
             a{
                 color: $white-color;
@@ -31,7 +35,7 @@ section.main-hero-section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 5rem 0;
+    padding: 3rem 0;
     margin-top: 4.5rem;
 
     .hero-inner{
@@ -60,7 +64,7 @@ section.main-hero-section {
   height: 100%;
   border-radius: 20px;
   border: 1px solid $para-text-color;;
-  padding: 2rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -68,12 +72,13 @@ section.main-hero-section {
   figure {
     aspect-ratio: 1/1.1;
     width: 100%;
-    border-radius: 20px;
     overflow: hidden;
     img {
+          border-radius: 20px;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: top;
     }
   }
   .info {
@@ -100,15 +105,42 @@ section.main-hero-section {
         display: block;
       }
     }
-    p{
-            color: $para-text-color;
-    }
     .main-hero-section-navigation{
         display: flex;
         gap: 2rem;
     }
   }
 }
+
+
+section.resume-section{
+.resume-wrapper{
+  li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    color: $para-text-color;
+    padding-bottom: 2rem;
+    font-size: clamp(1.4rem, 2vw, 2.2rem);
+    text-transform: capitalize;
+    &:not(:last-child){
+      margin-bottom: 2rem;
+    }
+
+    &::after{
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $para-text-color;
+    }
+  }
+}
+}
+
 
 
 

@@ -10,6 +10,19 @@
     height: 4.5rem;
     z-index: 100;
     background-color: $navbar-color;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    button{
+      border: 1px solid $white-color;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i{
+        color: $white-color;
+        font-size: 2.2rem;
+      }
+    }
 
     img{
     height: clamp(2rem, 5vw, 3rem);
@@ -64,13 +77,13 @@ section.main-hero-section {
   height: 100%;
   border-radius: 20px;
   border: 1px solid $para-text-color;;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
   figure {
-    aspect-ratio: 1/1.1;
+    aspect-ratio: 1/.7;
     width: 100%;
     overflow: hidden;
     img {

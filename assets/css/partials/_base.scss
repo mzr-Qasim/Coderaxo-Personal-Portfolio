@@ -139,8 +139,38 @@ border-radius: 30px;
 .section-heading{
     h3{
         font-size: clamp(2rem, 3vw, 6rem);
-        span{
-       
+    }
+}
+
+ul.social-media-link{
+    display: flex;
+    li.custom-social-media-link{
+        border-radius: 8px;
+        border: 1px solid $para-text-color;
+        transition: all ease-in-out .4s;
+
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+        a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+                padding: 1.1rem;
+
+        i{
+            font-size: 1.25rem;
+            color: $white-color;
+                    transition: all ease-in-out .4s;
+        }
+        }
+        &:hover{
+            border: 1px solid $theme-color-1;
+            a{
+                i{
+                    color: $theme-color-1;
+                }
+            }
         }
     }
 }

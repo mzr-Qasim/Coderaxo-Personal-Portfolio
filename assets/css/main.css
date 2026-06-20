@@ -11980,6 +11980,48 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?f6aj7");
+  src: url("fonts/icomoon.eot?f6aj7#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?f6aj7") format("truetype"), url("fonts/icomoon.woff?f6aj7") format("woff"), url("fonts/icomoon.svg?f6aj7#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right:before {
+  content: "\e900";
+}
+
+.icon-arrow-tilted-down:before {
+  content: "\e901";
+}
+
+.icon-github:before {
+  content: "\e902";
+}
+
+.icon-hamburger:before {
+  content: "\e903";
+}
+
+.icon-linkedin:before {
+  content: "\e904";
+}
+
 h1, .h1,
 h2,
 .h2,
@@ -12088,6 +12130,36 @@ body {
 .section-heading h3, .section-heading .h3 {
   font-size: clamp(2rem, 3vw, 6rem);
 }
+
+ul.social-media-link {
+  display: flex;
+}
+ul.social-media-link li.custom-social-media-link {
+  border-radius: 8px;
+  border: 1px solid rgb(167, 167, 167);
+  transition: all ease-in-out 0.4s;
+}
+ul.social-media-link li.custom-social-media-link:not(:last-child) {
+  margin-right: 1.5rem;
+}
+ul.social-media-link li.custom-social-media-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1rem;
+}
+ul.social-media-link li.custom-social-media-link a i {
+  font-size: 1.25rem;
+  color: #fff;
+  transition: all ease-in-out 0.4s;
+}
+ul.social-media-link li.custom-social-media-link:hover {
+  border: 1px solid #9d00ff;
+}
+ul.social-media-link li.custom-social-media-link:hover a i {
+  color: #9d00ff;
+}
+
 .main-navbar {
   position: fixed;
   top: 0;
@@ -12096,6 +12168,18 @@ body {
   height: 4.5rem;
   z-index: 100;
   background-color: rgb(12, 12, 12);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.main-navbar button {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-navbar button i {
+  color: #fff;
+  font-size: 2.2rem;
 }
 .main-navbar img {
   height: clamp(2rem, 5vw, 3rem);
@@ -12141,13 +12225,13 @@ section.main-hero-section .hero-inner video {
   height: 100%;
   border-radius: 20px;
   border: 1px solid rgb(167, 167, 167);
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 .main-hero-left figure {
-  aspect-ratio: 1/1.1;
+  aspect-ratio: 1/0.7;
   width: 100%;
   overflow: hidden;
 }
